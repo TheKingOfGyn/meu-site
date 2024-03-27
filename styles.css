@@ -1,0 +1,326 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Fundo.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: #000; /* Cor preta */
+    color: #fff;
+    padding: 10px 0; /* Diminui o espaçamento interno do cabeçalho */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Aumentei a intensidade da sombra */
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo img {
+    max-height: 200px; /* Aumenta ainda mais o tamanho da logo no cabeçalho conforme necessário */
+    margin-right: 22px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    text-align: center; /* Centraliza o texto do menu */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+}
+
+.nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ff4500;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #eee;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #ff5722;
+}
+
+/* Sobre Nós */
+.about {
+    text-align: center;
+    padding: 80px 0;
+    color: #FFFFFF;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about p,
+.services p,
+.contact p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilo adicional para a seção "Sobre Nós" */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.about-image {
+    flex-shrink: 0;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para o botão de CTA na seção "Sobre Nós" */
+.about .cta-button {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about .cta-button:hover {
+    background-color: #ff5722;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center; /* Centraliza os serviços horizontalmente */
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px; /* Aumentei a largura dos serviços para dar mais espaço */
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.service h3 {
+    color: #333;
+    margin-top: 20px; /* Aumentei o espaçamento superior do título */
+    font-size: 24px;
+    position: relative;
+}
+
+.service h3::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #ff4500;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service p {
+    margin-top: 20px; /* Adicionei espaçamento entre o título e o texto */
+    font-size: 16px;
+    color: #666;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Entre em Contato */
+.contact {
+    text-align: center;
+    padding: 80px 0;
+    color: #FFFFFF;
+}
+
+.contact h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+    background-color: #ff5722;
+}
+
+/* Adicione algum espaçamento superior ao botão de CTA */
+.contact .cta-button {
+    margin-top: 20px;
+}
+
+/* Estilo adicional para a seção "Entre em Contato" */
+.contact-info {
+    max-width: 600px;
+    margin: 40px auto; /* Aumentei o espaçamento entre o formulário e as informações de contato */
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Adicione algum espaçamento superior ao botão de CTA nas informações de contato */
+.contact-info .cta-button {
+    margin-top: 20px;
+}
+
+.footer {
+    background: #000; /* Cor preta */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Aumentei a intensidade da sombra */
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+}
